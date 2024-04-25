@@ -16,7 +16,7 @@ Welcome to my To-Do List Website! This project is a simple web application desig
   
 ## Getting Started
 
-1. Clone the Repository: git clone https://github.com/yourusername/your-to-do-list.git
+1. Clone the Repository: git clone https://github.com/arshitkataria2/To-Do-List-Website
   
 2. Navigate to the Project Directory: cd your-to-do-list
   
