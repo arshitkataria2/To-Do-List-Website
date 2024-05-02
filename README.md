@@ -45,5 +45,5 @@ Contributions are welcome! If you'd like to contribute to this project, please f
 
 ## Team
 
-Arshit Kataria 2310991793
-Arushi Sachdeva 2310991795
+Arshit Kataria 2310991793.
+Arushi Sachdeva 2310991795.
