@@ -1,4 +1,4 @@
-# To-Do List Website
+# ✅To-Do List Website
 
 Welcome to my To-Do List Website! This project is a simple web application designed to help users manage their tasks efficiently.
 
@@ -45,6 +45,6 @@ Contributions are welcome! If you'd like to contribute to this project, please f
 
 ## Team
 
-Arshit Kataria (2310991793)
+[Arshit Kataria](https://github.com/arhitkataria2) - 2310991793
 
-Arushi Sachdeva (2310991795)
+[Arushi Sachdeva](https://github.com/arushisachdeva) - 2310991795
