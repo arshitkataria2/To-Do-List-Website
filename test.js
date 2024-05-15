@@ -158,8 +158,6 @@ function updateTaskDetails(taskName, selectedDate) {
 
     taskRow.appendChild(urgencyDivItem);
 
-    taskRow.appendChild(urgencyDivItem);
-
     var tasksContainer = document.getElementById('tasksContainer');
     tasksContainer.appendChild(taskRow);
     taskCount++;
@@ -235,7 +233,10 @@ function updateTaskDetails(taskName, selectedDate) {
 
     taskRow.appendChild(completedDiv);
 }
+
 function showCompletedTasks() {
+
+
     const allTaskRows = document.querySelectorAll('.task-row');
 
     allTaskRows.forEach(taskRow => {
@@ -248,6 +249,7 @@ function showCompletedTasks() {
         }
     });
 }
+
 function showTasks() {
     const allTaskRows = document.querySelectorAll('.task-row');
 
@@ -261,12 +263,20 @@ function showTasks() {
         }
     });
 }
+
 document.addEventListener('DOMContentLoaded', function () {
     const showCompletedButton = document.getElementById('showCompletedButton');
 
     if (showCompletedButton) {
         showCompletedButton.addEventListener('click', showCompletedTasks);
     }
+    
+    const taskInput = document.getElementById('taskInput');
+    taskInput.addEventListener('keydown', function(event) {
+        if (event.key === 'Enter') {
+            openPopup();
+        }
+    });
 });
 
 function deleteTask(taskRow) {
@@ -282,6 +292,7 @@ function deleteTask(taskRow) {
         box.style.height = newHeight + 'px';
     }
 }
+
 document.addEventListener('DOMContentLoaded', function () {
     const quoteWrapper = document.getElementById('quoteWrapper');
     const quoteAuthorElement = document.getElementById('quoteAuthor');
@@ -333,6 +344,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     setInterval(changeQuote, 60000);
 });
+
 function filterTasksByUrgency(urgency) {
     var tasksContainer = document.getElementById('tasksContainer');
     var taskRows = tasksContainer.getElementsByClassName('task-row');
@@ -360,4 +372,13 @@ function filterTasksByUrgency(urgency) {
                 break;
         }
     }
+    document.querySelectorAll('.custom-checkbox input[type="checkbox"]').forEach(checkbox => {
+        checkbox.addEventListener('change', function() {
+            if (this.checked) {
+                this.nextSibling.style.backgroundColor = '#2196F3';
+            } else {
+                this.nextSibling.style.backgroundColor = '#eee';
+            }
+        });
+    });
 }
